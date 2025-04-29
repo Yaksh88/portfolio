@@ -183,7 +183,7 @@ export default function Home() {
     </div>
   </div>
 
-  {/* Mobile Dropdown Menu */}
+
   {/* Mobile Dropdown Menu */}
 {isMenuOpen && (
   <motion.ul
@@ -230,7 +230,7 @@ export default function Home() {
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: 0.4, duration: 0.8 }}
   >
-    Full-Stack Developer with a backend brain and a product-driven heart. I build fast, intelligent tools that simplify lives — from robust APIs to delightful user experiences.
+    Full-Stack Developer with a backend brain and a product-driven heart. I build fast, intelligent tools that simplify lives — from robust APIs to engaging user experiences.
   </motion.p>
 
   <motion.div
