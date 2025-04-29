@@ -134,7 +134,7 @@ export default function Home() {
         <title>Yaksh Patel</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Yaksh Patel - Full Stack Developer Portfolio" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/YP.ico" />
       </Head>
 
       <main className="min-h-screen px-4 sm:px-8">
