@@ -11,8 +11,10 @@ import {
   Server,
   Database,
   Settings2,
-  Mail
+  Mail,
+  Github, Linkedin
 } from "lucide-react";
+
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("Home");
@@ -246,6 +248,7 @@ export default function Home() {
       </Button>
     </Link>
   </motion.div>
+  
 
   {/* Scroll Cue */}
   <motion.div
@@ -531,12 +534,23 @@ export default function Home() {
       
         </main>
           {/* Footer */}
-          <footer className="bg-muted text-muted-foreground text-sm py-6 text-center">
-          <p>
-            © {new Date().getFullYear()} Yaksh Patel. Built with Next.js, TailwindCSS, and Shadcn UI.
-          </p>
-          
-        </footer>
+          <footer className="bg-muted text-muted-foreground text-sm py-6 text-center flex flex-col items-center gap-4">
+  <p>
+    © {new Date().getFullYear()} Yaksh Patel. Built with Next.js, TailwindCSS, and Shadcn UI.
+  </p>
+  <div className="flex gap-6">
+    <Link href="https://github.com/Yaksh88" target="_blank">
+      <Github className="w-6 h-6 hover:text-primary transition-colors duration-300" />
+    </Link>
+    <Link href="https://linkedin.com/in/yakshpatel8" target="_blank">
+      <Linkedin className="w-6 h-6 hover:text-primary transition-colors duration-300" />
+    </Link>
+    <Link href="mailto:yakshp008@gmail.com">
+      <Mail className="w-6 h-6 hover:text-primary transition-colors duration-300" />
+    </Link>
+  </div>
+</footer>
+
       
     </div>
   );
